@@ -1,0 +1,15 @@
+@import "variables";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: $text;
+  @include article
+}
+.body {
+  background-color: $background;
+}
+a {
+  text-decoration: none;
+}

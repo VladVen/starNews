@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  gap: 45px;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  flex-shrink: 0;
+  flex-basis: 0;
+}

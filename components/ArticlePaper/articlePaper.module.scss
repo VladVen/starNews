@@ -1,0 +1,48 @@
+
+.paper {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 530px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05) !important;
+  border-radius: 5px !important;
+
+  img {
+    border-radius: 5px 5px 0 0;
+    width: 400px;
+    height: 217px;
+  }
+  .description {
+    padding: 25px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+
+    div:nth-child(2) {
+      font-size: 24px;
+    }
+    div:nth-child(3) {
+      font-size: 16px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      height: 50px;
+      white-space: nowrap;
+    }
+
+  }
+  a {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 425px){
+  .paper {
+    width: 290px;
+    img {
+      width: 290px;
+    }
+  }
+}

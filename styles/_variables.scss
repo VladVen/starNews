@@ -1,0 +1,17 @@
+$background: #E5E5E5;
+$text: #363636;
+
+@mixin article {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0;
+  text-align: left;
+}
+
+@mixin date {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  opacity: 60%
+}
