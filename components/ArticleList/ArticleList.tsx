@@ -5,12 +5,13 @@ import style from './ArticleList.module.scss'
 
 interface IArticleList {
     articles: INews[]
+    searchValue: string
 }
-export const ArticleList: FC<IArticleList> = ({articles}) => {
+export const ArticleList: FC<IArticleList> = ({articles, searchValue}) => {
     return (
         <div className={style.container}>
             {
-                articles.map(item => <ArticlePaper key={item.id} article={item}/>)
+                articles.map(item => <ArticlePaper key={item.id} article={item} searchValue={searchValue}/>)
             }
         </div>
     );

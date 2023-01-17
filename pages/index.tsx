@@ -51,7 +51,7 @@ export default function Home() {
                 <hr/>
                 {
                     isLoading ? <Preloader/> : totalCount !== 0 ? <>
-                        <ArticleList articles={news}/>
+                        <ArticleList articles={news} searchValue={debouncedSearch}/>
                         <div className={style.pagination}>
                             <Pagination count={Math.ceil(totalCount / 6)} onChange={handlePagination}
                                         size={width > 500 ? 'large' : 'small'} page={page}/>

@@ -1,5 +1,6 @@
 
 .paper {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -23,11 +24,10 @@
       font-size: 24px;
     }
     div:nth-child(3) {
-      font-size: 16px;
-      text-overflow: ellipsis;
       overflow: hidden;
-      height: 50px;
-      white-space: nowrap;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
 
   }
