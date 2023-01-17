@@ -33,7 +33,7 @@ const DetailedArticle: FC<IDetailedArticle> = ({article}) => {
                         <div>{article.summary}</div>
                         <a className={style.origin} target={'_blank'} rel={'noreferrer'} href={article.url}>Origin: {article.url}</a>
                     </Paper>
-                    <Link href={'/'}><KeyboardBackspaceIcon/> Back to homepage</Link>
+                    <Link href={'/'} className={style.goBack}><KeyboardBackspaceIcon/> Back to homepage</Link>
                 </div>
             </div>
         </>
